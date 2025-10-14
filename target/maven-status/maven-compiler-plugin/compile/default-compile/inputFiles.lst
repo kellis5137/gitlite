@@ -1,0 +1,11 @@
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/GitliteApplication.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/configuration/AppConfig.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/configuration/GitLiteJpaConfig.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/controller/HelloController.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/model/Project.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/model/ProjectUser.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/model/ProjectUserId.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/model/Role.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/model/User.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/repository/ProjectRepository.java
+/Users/keellis/eclipse-workspace/gitlite/src/main/java/com/sillek/gitlite/repository/UserRepository.java

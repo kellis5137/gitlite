@@ -1,0 +1,11 @@
+com/sillek/gitlite/configuration/AppConfig.class
+com/sillek/gitlite/GitliteApplication.class
+com/sillek/gitlite/model/Role.class
+com/sillek/gitlite/model/ProjectUserId.class
+com/sillek/gitlite/repository/UserRepository.class
+com/sillek/gitlite/controller/HelloController.class
+com/sillek/gitlite/model/User.class
+com/sillek/gitlite/model/ProjectUser.class
+com/sillek/gitlite/repository/ProjectRepository.class
+com/sillek/gitlite/configuration/GitLiteJpaConfig.class
+com/sillek/gitlite/model/Project.class

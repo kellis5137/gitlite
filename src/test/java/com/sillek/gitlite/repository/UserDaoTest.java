@@ -11,19 +11,19 @@ import com.sillek.gitlite.model.User;
 
 @DataJpaTest
 @ActiveProfiles("test")
-public class UserRepositoryTest {
+public class UserDaoTest {
 
 
     @Autowired
-    private UserRepository UserRepository;
+    private UserDao userDao;
 
     @Test
     public void givenUser_whenSave_thenGetOk() {
-    	User User = new User("test", "name");
-        UserRepository.save(User);
+    	User user = User.builder().firstName("test").lastName("name").email("test@test.gov").build();
+    	userDao.save(user);
 
-        User User2 = UserRepository.findById(Long.valueOf(1)).get();
-        assertEquals("test", User2.getFirstName());
-        assertEquals("name", User2.getLastName());
+        User user2 = userDao.findById(Long.valueOf(1)).get();
+        assertEquals("test", user2.getFirstName());
+        assertEquals("name", user2.getLastName());
     }
 }

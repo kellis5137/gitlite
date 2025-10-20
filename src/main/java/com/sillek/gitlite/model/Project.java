@@ -6,14 +6,22 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
+@Builder
 @Entity
 @Table(name = "projects")
 public class Project {
+	@Setter(AccessLevel.NONE)
 	@jakarta.persistence.Id
-    @Column(name = "id")
-    @SequenceGenerator(name = "SEQ", sequenceName = "PROJECT_SEQ", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ")
+	@Column(name = "id")
+	@SequenceGenerator(name = "SEQ", sequenceName = "PROJECT_SEQ", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ")
 	private Long id;
 
 	@Column(name = "name")
@@ -24,17 +32,11 @@ public class Project {
 		this.name = name;
 	}
 
-	public Long getId() {
-		return id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
+	private Project(Long id, String name) {
+		super();
+		this.id = id;
 		this.name = name;
 	}
-
-
+	
+	
 }

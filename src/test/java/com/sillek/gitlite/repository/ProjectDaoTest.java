@@ -11,18 +11,18 @@ import com.sillek.gitlite.model.Project;
 
 @DataJpaTest
 @ActiveProfiles("test")
-public class ProjectRepositoryTest {
+public class ProjectDaoTest {
 
 
     @Autowired
-    private ProjectRepository projectRepository;
+    private ProjectDao projectDao;
 
     @Test
     public void givenProject_whenSave_thenGetOk() {
-    	Project project = new Project("test");
-        projectRepository.save(project);
+    	Project project = Project.builder().name("test").build();
+        projectDao.save(project);
 
-        Project project2 = projectRepository.findById(Long.valueOf(1)).get();
+        Project project2 = projectDao.findById(Long.valueOf(1)).get();
         assertEquals("test", project2.getName());
     }
 }
